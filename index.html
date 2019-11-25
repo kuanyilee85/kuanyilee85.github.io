@@ -2,144 +2,290 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Kuanyi's Portfolio</title>
-    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <!-- partial:index.partial.html -->
-    <head>
-      <link
-        href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700&display=swap"
-        rel="stylesheet"
-      />
-    </head>
 
-    <body>
-      <header id="header">
-        <div class="header-container">
-          <nav id="navbar">
-            <ul>
-              <li><a href="#welcome-section" class="nav-link">Home</a></li>
-              <li><a href="#about" class="nav-link">About</a></li>
-              <li><a href="#projects" class="nav-link">Web</a></li>
-              <li><a href="#" class="nav-link">Engineering</a></li>
-              <li><a href="#" class="nav-link">Skills</a></li>
-            </ul>
-          </nav>
-          <a
-            href="https://github.com/kuanyilee85"
-            id="profile-link"
-            target="_blank"
-            ><img
-              src="https://lh3.google.com/u/0/d/1OfYu9MUuKaF8YEK2_SxINhXq-Wwh-8bB=w1682-h1156-iv1"
-              alt="github_icon"
-              class="icon"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/kuanyilee85/"
-            id="linkedin-link"
-            target="_blank"
-            ><img
-              src="https://lh3.google.com/u/0/d/1DZuQC8Babu-8yUfIx4I4UzwBDYlleQZf=w2560-h1254-iv1"
-              alt="linkedin_icon"
-              class="icon"
-          /></a>
+  <body data-spy="scroll" data-target="#main-nav" id="home">
+    <!--NAVBAR SECTION-->
+    <nav
+      class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"
+      id="main-nav"
+    >
+      <div class="container">
+        <a href="#home" class="navbar-brand">Kuanyi's Portfolio</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-section" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#project-header-section" class="nav-link">Projects</a>
+            </li>
+            <!--
+            <li class="nav-item">
+              <a href="#engineering" class="nav-link">Engineering</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            -->
+            <!--NAVBAR ICONS-->
+            <li class="nav-item">
+              <a
+                href="https://github.com/kuanyilee85"
+                id="profile-link"
+                target="_blank"
+                ><img
+                  src="./img/github-icon.png"
+                  alt="github_icon"
+                  class="navbar-icon"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/kuanyilee85/"
+                id="linkedin-link"
+                target="_blank"
+                ><img
+                  src="./img/linkedin-icon.png"
+                  alt="linkedin_icon"
+                  class="navbar-icon"
+              /></a>
+            </li>
+          </ul>
         </div>
-      </header>
-      <section id="welcome-section" class="welcome-section">
-        <h1>KuanYi Lee</h1>
-        <h3>Front-end Web Developer</h3>
-      </section>
-      <section id="about" class="about-section">
-        <h4>
-          About me -
-          <a id="resume" href="./assets/Resume_Kuanyi Lee.pdf" target="_blank"
-            >Resume</a
-          >
-        </h4>
-        <h5>Let's Work Together!</h5>
-      </section>
-      <section id="projects" class="project-section">
-        <h2 id="project-header">WEB DEV PROJECTS</h2>
-        <div class="project-grid">
-          <a
-            href="https://ocean-paradise-resort.herokuapp.com/"
-            target="_blank"
-            class="project-tile"
-          >
-            <img
-              class="project-image"
-              src="https://lh3.google.com/u/0/d/1jsebg0E7m50Dhjez9plGfQX6L69d2a6Z=w2560-h1254-iv1"
-              alt="Ocean Paradise Resort"
-            />
-            <p class="project-title">Ocean Paradise Resort</p>
-          </a>
-          <a
-            href="https://javascript-budget.herokuapp.com/"
-            target="_blank"
-            class="project-tile"
-          >
-            <img
-              class="project-image"
-              src="https://lh3.google.com/u/0/d/15puOvMh97f190z7Pa-ClEJuJhoqgBj79=w1188-h1222-iv1"
-              alt="The Budget App"
-            />
-            <p class="project-title">The Budget App</p>
-          </a>
-          <a
-            href="https://codepen.io/kuanyilee/full/wvvXLKz"
-            target="_blank"
-            class="project-tile"
-          >
-            <img
-              class="project-image"
-              src="https://lh3.google.com/u/0/d/1c3JUdhdGKQlgy22RFhebJEGAtnmsDziC=w1188-h1222-iv1"
-              alt="Trubute Page"
-            />
-            <p class="project-title">Tribute Page</p>
-          </a>
-          <a
-            href="https://codepen.io/kuanyilee/full/dyyjojQ"
-            target="_blank"
-            class="project-tile"
-          >
-            <img
-              class="project-image"
-              src="https://lh3.google.com/u/0/d/1cB7id4YxAp_skL_EoBzaff8K6S8_ZFHv=w2560-h1254-iv1"
-              alt="Survey Form"
-            />
-            <p class="project-title">Survey Form</p>
-          </a>
-          <a
-            href="https://codepen.io/kuanyilee/full/BaaPLBm"
-            target="_blank"
-            class="project-tile"
-          >
-            <img
-              class="project-image"
-              src="https://lh3.google.com/u/0/d/13Y3Y73aI6qThv_YjJBzKrdbUUUJ4eggh=w2560-h1254-iv1"
-              alt="Product Landing Page"
-            />
-            <p class="project-title">Product Landing Page</p>
-          </a>
-          <a
-            href="https://codepen.io/kuanyilee/full/bGGjJMj"
-            target="_blank"
-            class="project-tile"
-          >
-            <img
-              class="project-image"
-              src="https://lh3.google.com/u/0/d/1xZWKxUyHFwggNTZfRyFjUtG8K0HOghCG=w1188-h1222-iv1"
-              alt="Technical Documentation Page"
-            />
-            <p class="project-title">Technical Documentation Page</p>
-          </a>
+      </div>
+    </nav>
+
+    <!--HOME SECTION-->
+    <header id="home-section">
+      <!--class dark-overlay is for the opacity effect-->
+      <div class="dark-overlay">
+        <!--Following is for the content-->
+        <div class="home-inner container"></div>
+        <div class="row">
+          <div class="col text-center py-5">
+            <h1 class="display-4">KuanYi Lee</h1>
+            <p class="lead">Frontend Web Developer</p>
+          </div>
         </div>
-      </section>
-      <section id="engineering" class="engineering-section"></section>
-      <section id="skills" class="skills-section"></section>
-      <footer></footer>
-    </body>
-    <!-- partial -->
+      </div>
+    </header>
+
+    <!--ABOUT SECTION-->
+    <section id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-5">
+            <h1 class="display-4">About Me</h1>
+            <p class="lead">Let's Work Together!</p>
+            <a
+              href="./assets/Resume_Kuanyi Lee.pdf"
+              target="_blank"
+              class="btn btn-outline-info"
+              >Resume</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--WEB HEADER SECTION-->
+    <header id="project-header-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto text-center">
+            <h1>WEB DEV PROJECTS</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--PROJECTS SECTION-->
+    <section id="projects" class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card-columns text-center">
+              <div class="card">
+                <img
+                  src="./img/projects/Ocean_Paradise_Resort.jpg"
+                  alt=""
+                  class="img-fluid card-img-top"
+                />
+                <div class="card-body">
+                  <a
+                    href="https://ocean-paradise-resort.herokuapp.com/"
+                    target="_blank"
+                    class="btn btn-outline-warning"
+                    >Ocean Paradise Resort</a
+                  >
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  src="./img/projects/Product_Landing_Page.jpg"
+                  alt=""
+                  class="img-fluid card-img-top"
+                />
+                <div class="card-body">
+                  <a
+                    href="https://codepen.io/kuanyilee/full/bGGjJMj"
+                    target="_blank"
+                    class="btn btn-outline-warning"
+                    >Product Landing Page</a
+                  >
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  src="./img/projects/The_Budget_App.jpg"
+                  alt=""
+                  class="img-fluid card-img-top"
+                />
+                <div class="card-body">
+                  <a
+                    href="https://javascript-budget.herokuapp.com/"
+                    target="_blank"
+                    class="btn btn-outline-warning"
+                    >The Budget App</a
+                  >
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  src="./img/projects/Survey_Form.jpg"
+                  alt=""
+                  class="img-fluid card-img-top"
+                />
+                <div class="card-body">
+                  <a
+                    href="https://codepen.io/kuanyilee/full/BaaPLBm"
+                    target="_blank"
+                    class="btn btn-outline-warning"
+                    >Survey Form</a
+                  >
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  src="./img/projects/Technical_Documentation_Page.jpg"
+                  alt=""
+                  class="img-fluid card-img-top"
+                />
+                <div class="card-body">
+                  <a
+                    href="https://codepen.io/kuanyilee/full/bGGjJMj"
+                    target="_blank"
+                    class="btn btn-outline-warning"
+                    >Technical Documentation</a
+                  >
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  src="./img/projects/Trubute_Page.jpg"
+                  alt=""
+                  class="img-fluid card-img-top"
+                />
+                <div class="card-body">
+                  <a
+                    href="https://codepen.io/kuanyilee/full/dyyjojQ"
+                    target="_blank"
+                    class="btn btn-outline-warning"
+                    >Tribute Page</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-CONTACT SECTION-->
+    <footer id="footer-contact" class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-4">
+            <h3>Kuanyi's Portfolio Page</h3>
+            <p>Made &copy; <span id="year"></span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Get the current year for the copyright
+      $('#year').text(new Date().getFullYear());
+
+      //Init Scrollspy
+      $('body').scrollspy({ target: '#main-nav' });
+
+      // Smooth Scrolling
+      $('#main-nav a').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+
+          const hash = this.hash;
+
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800,
+            function() {
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+    </script>
   </body>
 </html>

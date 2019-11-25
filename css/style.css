@@ -1,0 +1,85 @@
+body {
+  background: rgb(163, 162, 162);
+  color: #fff;
+}
+
+.navbar {
+  border-bottom: #008ed6 1px solid;
+  opacity: 0.8;
+}
+.navbar-icon {
+  height: 28px;
+  width: 28px;
+  margin: 6px;
+  padding: 3px 3px 3px 3px;
+  background: #fff;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+.navbar-icon:hover {
+  opacity: 1;
+}
+
+#home-section {
+  background: url(../img/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+#home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 700px;
+  background: rgba(0, 0, 0, 0.3);
+}
+#home-section .homer-inner {
+  padding-top: 150px;
+}
+#home-section .row {
+  padding-top: 150px;
+}
+
+#about-section {
+  background: url(../img/about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+#about-section .row {
+  padding-top: 150px;
+}
+
+#project-header-section {
+  background: url(../img/reading.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 120px;
+}
+#project-header-section .row {
+  padding-top: 60px;
+}
+
+#projects {
+  background: url(../img/office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+
+#projects .card {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#footer-contact {
+  background: url(../img/reading.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100px;
+}
