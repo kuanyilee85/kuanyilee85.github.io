@@ -58,10 +58,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 120px;
+  min-height: 170px;
 }
 #project-header-section .row {
-  padding-top: 60px;
+  padding-top: 75px;
 }
 
 #projects {
