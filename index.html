@@ -28,7 +28,7 @@
       id="main-nav"
     >
       <div class="container">
-        <a href="#home" class="navbar-brand">Kuanyi's Portfolio</a>
+        <a href="index.html" class="navbar-brand">Kuanyi's Portfolio</a>
         <button
           class="navbar-toggler"
           data-toggle="collapse"
@@ -38,32 +38,34 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
+            <!--NAVBAR ITEMS-->
             <li class="nav-item">
               <a href="#home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#about-section" class="nav-link">About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#projects-anchor" class="nav-link">Projects</a>
+              <a href="#project" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
-              <a href="#skills-anchor" class="nav-link">Skills</a>
+              <a href="#skill" class="nav-link">Skills</a>
             </li>
 
             <!--NAVBAR ICONS-->
             <li class="nav-item">
               <a
-                href="https://github.com/kuanyilee85"
+                href="https:/ /github.com/kuanyilee85"
                 id="profile-link"
                 target="_blank"
                 ><img
                   src="./img/github-icon.png"
                   alt="github_icon"
                   class="navbar-icon"
-              /></a>
+                />
+              </a>
             </li>
-            <li>
+            <li class="nav-item">
               <a
                 href="https://www.linkedin.com/in/kuanyilee85/"
                 id="linkedin-link"
@@ -72,7 +74,8 @@
                   src="./img/linkedin-icon.png"
                   alt="linkedin_icon"
                   class="navbar-icon"
-              /></a>
+                />
+              </a>
             </li>
           </ul>
         </div>
@@ -88,36 +91,63 @@
         <div class="row">
           <div class="col text-center py-5">
             <h1 class="display-4">KuanYi Lee</h1>
-            <h2>Frontend Web Developer</h2>
+            <h1>Software Developer</h1>
           </div>
         </div>
       </div>
     </header>
 
     <!--ABOUT SECTION-->
-    <section id="about-section">
+    <section id="about">
       <div class="container">
-        <div class="row">
-          <div class="col text-center py-5">
-            <h1 class="display-4">About Me</h1>
-            <h2>Let's Work Together!</h2>
-            <a
-              href="./assets/Resume_Kuanyi Lee.pdf"
-              target="_blank"
-              class="btn btn-outline-success"
-              >Resume</a
-            >
+        <div class="row d-flex justify-content-center align-items-center">
+          <h1 class="display-4">About me -</h1>
+          <a
+            class="btn btn-outline-info"
+            href="./assets/Resume_Kuanyi Lee.pdf"
+            target="_blank"
+            >Resume</a
+          >
+        </div>
+        <hr />
+        <div class="row-hl d-flex justify-content-around text-center">
+          <div class="p-4 item-hl">
+            <img
+              class="icon-skills"
+              src="./img/skills/programming.png"
+              alt="programming-icon"
+            />
+            <h3>Web Development</h3>
+            <p>
+              HTML | CSS | JavaScript | React | Redux | Node | Express | Git |
+              Heroku
+            </p>
+          </div>
+          <div class="p-4 item-hl">
+            <img class="icon-skills" src="" alt="" />
+            <h2></h2>
+            <p></p>
+          </div>
+          <div class="p-4 item-hl">
+            <img
+              class="icon-skills"
+              src="./img/skills/battery.png"
+              alt="battery-icon"
+            />
+            <h3>Battery / Materials Engineering</h3>
+            <p>Lithium ion batteries | Battery Test Programming</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!--PROJECTS ANCHOR-->
-    <section id="projects-anchor">
-      <div class="container"></div>
+    <!-------For Project Navbar link-------->
+    <section id="project">
+      <div></div>
     </section>
+
     <!--PROJECTS HEADER SECTION-->
-    <header id="projects-header-section">
+    <header id="projects-header">
       <div class="container">
         <div class="row">
           <div class="col-md-6 m-auto text-center">
@@ -205,12 +235,13 @@
       </div>
     </section>
 
-    <!--SKILLS ANCHOR-->
-    <section id="skills-anchor">
-      <div class="container"></div>
+    <!-------For Skill Navbar link-------->
+    <section id="skill">
+      <div></div>
     </section>
+
     <!--SKILLS HEAD SECTION-->
-    <header id="skills-header-section">
+    <header id="skills-header">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 m-auto text-center">
@@ -224,7 +255,7 @@
     <section id="skills" class="py-4">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col ">
             <div class="card-columns text-center">
               <div class="card">
                 <img
@@ -242,7 +273,10 @@
                 />
               </div>
               <div class="card">
-                <img class="img-fluid card-img-top" src="img/skills/git.png" />
+                <img
+                  class="img-fluid card-img-top"
+                  src="img/skills/express.png"
+                />
               </div>
               <div class="card">
                 <img
@@ -250,18 +284,52 @@
                   src="img/skills/javascript.png"
                 />
               </div>
+              <div class="card">
+                <img class="img-fluid card-img-top" src="img/skills/git.png" />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!--FOOTER-CONTACT SECTION-->
-    <footer id="footer-contact" class="bg-dark">
+    <!--FOOTER SECTION-->
+    <footer id="footer" class="bg-dark">
       <div class="container">
         <div class="row">
           <div class="col text-center py-4">
-            <p>Thank you for visiting! Last update: November 2019</p>
+            <a
+              href="https:/ /github.com/kuanyilee85"
+              id="profile-link"
+              target="_blank"
+              ><img
+                src="./img/github-icon.png"
+                alt="github_icon"
+                class="navbar-icon"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kuanyilee85/"
+              id="linkedin-link"
+              target="_blank"
+              ><img
+                src="./img/linkedin-icon.png"
+                alt="linkedin_icon"
+                class="navbar-icon"
+              />
+            </a>
+            <a
+              href="mailto:kuanyilee85@gmail.com?subject=We are looking a software developer like you!"
+              id="envelope-link"
+              target="_blank"
+            >
+              <img
+                src="./img/skills/envelope.png"
+                alt="envelope_icon"
+                class="navbar-icon"
+              />
+            </a>
+            <p>Thank you for visiting! Last update: December 2019</p>
           </div>
         </div>
       </div>
@@ -284,7 +352,7 @@
     ></script>
 
     <script>
-      //Init Scrollspy
+      // Init Scrollspy
       $('body').scrollspy({ target: '#main-nav' });
 
       // Smooth Scrolling
