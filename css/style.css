@@ -5,23 +5,28 @@
 }
 
 body {
-  background: rgb(163, 162, 162);
+  background: #fff;
   color: #fff;
   height: 100vh;
   width: 100vw;
 }
 h1 {
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+  text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.8);
 }
 h2 {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
 }
 .section-title {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
   color: rgb(255, 145, 0);
   font-size: 3rem;
 }
+.sub-title {
+  color: rgb(255, 145, 0);
+}
+
 h3 {
-  margin: 2em 0 2em 0;
+  margin: 1em 0 1em 0;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 h4 {
@@ -29,7 +34,7 @@ h4 {
 }
 p {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .navbar {
@@ -47,23 +52,27 @@ p {
 .navbar-icon:hover {
   opacity: 1;
 }
-.contact-icon {
-  height: 30px;
-  width: 30px;
-  margin: 6px;
-  padding: 3px 3px 3px 3px;
-  background: #fff;
-  border-radius: 5px;
-}
 
 #home-section {
   background: url(../img/home.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-position: 100% 0;
+  background-size: 110% 110%;
+  background-attachment: scroll;
   min-height: 100vh;
   width: 100vw;
 }
+
+@media screen and (max-width: 500px) {
+  #home-section {
+    background: url(../img/home.jpg);
+    background-position: 100% 100%;
+    background-size: 130% 100%;
+    background-attachment: scroll;
+    min-height: 100vh;
+    width: 100vw;
+  }
+}
+
 #home-section .dark-overlay {
   top: 0;
   left: 0;
@@ -71,11 +80,11 @@ p {
   background: rgba(0, 0, 0, 0.05);
 }
 #home-section .row {
-  padding-top: 30vh;
+  padding-top: 20vh;
 }
 
 #about {
-  background: url(../img/about.jpg);
+  background-color: #f5f5f5;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -86,9 +95,15 @@ p {
   padding-top: 20vh;
   text-align: center;
 }
+#about h1 {
+  color: #000000;
+}
 #about a {
   font-size: 1.8rem;
   border-radius: 25px;
+}
+#about p {
+  color: #000000;
 }
 #about hr {
   display: block;
@@ -98,24 +113,17 @@ p {
 }
 .icon-skills {
   margin: 1em auto 1em auto;
-  height: 10vh;
-  width: 10vh;
+  height: 12vh;
+  width: 12vh;
 }
 
 #project div {
-  background: url(../img/about.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #f5f5f5;
   border-style: none;
   height: 5vh;
 }
 
 #projects {
-  background: url(../img/about.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   padding: 28px;
   min-height: 75vh;
 }
@@ -136,14 +144,10 @@ p {
   background: rgba(0, 0, 0, 0.6);
 }
 #projects p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 #skill div {
-  background: url(../img/about.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   border-style: none;
   height: 5vh;
 }
@@ -169,7 +173,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 60vh;
+  min-height: 65vh;
 }
 #skills .card {
   border-style: none;
@@ -186,4 +190,12 @@ p {
   background-size: cover;
   background-attachment: fixed;
   min-height: 10vh;
+}
+.contact-icon {
+  height: 30px;
+  width: 30px;
+  margin: 6px;
+  padding: 3px 3px 3px 3px;
+  background: #fff;
+  border-radius: 5px;
 }
