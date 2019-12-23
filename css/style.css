@@ -59,7 +59,7 @@ p {
 }
 #home-section {
   background: url(../img/home.jpg);
-  background-position: 100% 0;
+  background-position: 100% 100%;
   background-size: 110% 110%;
   background-attachment: scroll;
   min-height: 100vh;
@@ -151,7 +151,7 @@ p {
   padding-top: 30px;
 }
 #projects .card {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(50, 50, 50, 0.95);
 }
 #projects p {
   font-size: 1.1rem;
