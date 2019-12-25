@@ -19,7 +19,9 @@ p {
 }
 #about div {
   text-align: center;
-  padding: 10vh;
+  justify-content: center;
+  align-items: center;
+  padding: 17vh 0vw;
 }
 #about h1 {
   color: #fff;
@@ -58,6 +60,11 @@ p {
   background-size: cover;
   background-attachment: fixed;
   min-height: 10vh;
+}
+@media screen and (max-width: 500px) {
+  #footer {
+    min-height: 15vh;
+  }
 }
 .contact-icon {
   height: 30px;
