@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Look Ahead</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/handwrite_brown_k2_icon.ico" />
+  </head>
+  <body>
+    <form class="search-form">
+      <p>Which Place You Are Looking For? :)</p>
+      >
+      <input type="text" class="search" placeholder="City or State" />
+      <ul class="suggestions">
+        <li>Population for a city</li>
+        <li>or a state</li>
+      </ul>
+    </form>
+    <script>
+      // where WES build to provide the API
+      const endpoint =
+        'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+      // 常數cities儲存fetch()得到的數據
+      const cities = [];
+      // fetch()是一種js原生處理Request, response的API
+      fetch(endpoint)
+        // 取得的包裹內的.json物件
+        .then(blob => blob.json())
+        // .json物件中的資料用... spread operator打開並push()到cities常數中
+        // ... 很好用的operator, 很直覺的方法把bunch of data分散成array
+        .then(data => cities.push(...data));
+      console.log(cities);
+
+      // findMatches()處理user輸入的關鍵字, 傳回citie API中match的city或state
+      function findMatches(wordToMatch, cities) {
+        return cities.filter(place => {
+          // 利用變數regex和regular expression: new RegEXP(), 把關鍵字傳到match()
+          const regex = new RegExp(wordToMatch, 'ig');
+          return place.city.match(regex) || place.state.match(regex);
+        });
+      }
+
+      // fn 用來在數字中加一個comma, from stackoverflow
+      function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      }
+
+      function displayMatches() {
+        // fn執行時, keyin的this.value傳給findMatches(), 找到的城市放在matchArray
+        const matchArray = findMatches(this.value, cities);
+        // 用map()iterate一遍matchArray裡的城市, 用string template整理成html格式後放在html變數
+        const html = matchArray
+          .map(place => {
+            const regex = new RegExp(this.value, 'ig');
+            const cityNmae = place.city.replace(
+              regex,
+              `<span class="hl">${this.value}</span>`
+            );
+            // 以下為第二段用string template整理成html格式放到DOM, 用replace()把map()出來的字串再換成class="hl", high light
+            const stateName = place.state.replace(
+              regex,
+              `<span class="hl">${this.value}</span>`
+            );
+
+            // 以下為第一段用string template整理成html格式放到DOM
+            return `
+          <li>
+            <span class="name">${cityNmae}, ${stateName}</span>
+            <span class="population">${numberWithCommas(
+              place.population
+            )}</span>
+          </li>
+          `;
+          })
+          // join()把搜出來的結果串回一個array
+          .join('');
+        // 把html變數顯示到DOM
+        suggestions.innerHTML = html;
+        console.log(html);
+      }
+
+      // 選取DOM的.search和.suggestions
+      const searchInput = document.querySelector('.search');
+      const suggestions = document.querySelector('.suggestions');
+      // 監聽searchInput的change和keyup, 有變化時執行displayMatches
+      searchInput.addEventListener('change', displayMatches);
+      searchInput.addEventListener('keyup', displayMatches);
+    </script>
+  </body>
+</html>
