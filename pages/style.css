@@ -10,6 +10,8 @@ p {
 }
 #about {
   background: url(../img/bg-about.jpg);
+  justify-content: center;
+  align-items: center;
   background-position: center right;
   background-repeat: no-repeat;
   min-height: 50vh;
@@ -17,7 +19,7 @@ p {
 }
 #about div {
   text-align: center;
-  padding: 15vh;
+  padding: 10vh;
 }
 #about h1 {
   color: #fff;
