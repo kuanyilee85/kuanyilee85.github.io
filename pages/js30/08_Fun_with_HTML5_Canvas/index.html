@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Graffiti wall</title>
+  </head>
+  <body>
+    <canvas id="draw" width="800" height="800"></canvas>
+    <script>
+      // select canvas element
+      const canvas = document.querySelector('#draw');
+      // set up a ctx for drawing
+      const ctx = canvas.getContext('2d');
+      //set canvas width, height
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      // initial stroke style
+      ctx.strokeStyle = '#BADA55';
+      ctx.lineJoin = 'round'; //  initial line style
+      ctx.lineCap = 'round';
+      ctx.lineWidth = 30; // initial line weight
+
+      // this flag used to let function know if user is mousedown to drawing
+      let isDrawing = false;
+      //  initial last mouse cursor coordination
+      let lastX = 0;
+      let lastY = 0;
+      let hue = 0; // color for stroke, refer to mothereffinghsl.com
+      let direction = true; // another flag, tell if now lineWidth went too far
+
+      function draw(e) {
+        if (!isDrawing) return; // if mouseup, stop the function running
+        console.log(e);
+        ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+        ctx.beginPath();
+        ctx.moveTo(lastX, lastY); // start from
+        ctx.lineTo(e.offsetX, e.offsetY); //go to
+        ctx.stroke();
+        [lastX, lastY] = [e.offsetX, e.offsetY]; // destructing, update last coordination
+
+        //  increase hue to change color
+        hue++;
+        if (hue >= 360) {
+          hue = 0;
+        }
+
+        // if line weight went too far, flip direction and start to increasement or decreasement lineWidth
+        if (ctx.lineWidth >= 30 || ctx.lineWidth <= 8) {
+          direction = !direction;
+        }
+        if (direction) {
+          ctx.lineWidth++;
+        } else {
+          ctx.lineWidth--;
+        }
+      }
+
+      // draw if mousedown
+      canvas.addEventListener('mousedown', e => {
+        isDrawing = true;
+        [lastX, lastY] = [e.offsetX, e.offsetY]; // updating last coordinate since mousedown
+      });
+      canvas.addEventListener('mousemove', draw);
+      canvas.addEventListener('mouseup', () => (isDrawing = false));
+      canvas.addEventListener('mouseout', () => (isDrawing = false));
+    </script>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: url(https://source.unsplash.com/bmfulu-3Ano);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </body>
+</html>
