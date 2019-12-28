@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Console Tricks!</title>
+  </head>
+  <body>
+    <p onClick="makeGreen()">×BREAK×DOWN×</p>
+    <p onClick="makeGreen()">Open Console to see the result</p>
+
+    <script>
+      const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+      function makeGreen() {
+        const p = document.querySelector('p');
+        p.style.color = '#BADA55';
+        p.style.fontSize = '50px';
+      }
+
+      // Regular
+      console.log('%c 1. Regular', 'background:#BADA55');
+      console.log('Hello!');
+
+      // Interpolated
+      console.log('%c 2. Interpolated', 'background:#BADA55');
+      console.log('Hello! I am a %s string!', '💩');
+
+      // Styled
+      console.log('%c 3. Styled', 'background:#BADA55');
+      console.log(
+        '%c I am some great text',
+        'font-size: 25px; background: green; text-shadow: 2px 2px 0 white'
+      );
+
+      // warning!
+      console.log('%c 4. warning!', 'background:#BADA55');
+      console.warn('OH NOO');
+
+      // Error :|
+      console.log('%c 5. Error :|', 'background:#BADA55');
+      console.error('OH SHIT');
+
+      // Info
+      console.log('%c 6. Info', 'background:#BADA55');
+      console.info('Winter solstice is the shortest day of the year');
+
+      // Testing
+      console.log('%c 7. Testing', 'background:#BADA55');
+      const p = document.querySelector('p');
+      console.assert(p.classList.contains('ouch'), 'Select the wrong thing!');
+
+      // clearing
+      console.log('%c 8. clearing: use console.clear()', 'background:#BADA55');
+
+      // Viewing DOM Elements
+      console.log('%c 9. Viewing DOM Elements', 'background:#BADA55');
+      console.dir(p);
+
+      // Grouping together
+      console.log('%c 10. Grouping together', 'background:#BADA55');
+      dogs.forEach(dog => {
+        console.groupCollapsed(`${dog.name}`);
+        console.log(`This is ${dog.name}`);
+        console.log(`${dog.name} is ${dog.age} years old`);
+        console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+        console.groupEnd(`${dog.name}`);
+      });
+
+      // counting
+      console.log('%c 11. counting', 'background:#BADA55');
+      console.count('Ken');
+      console.count('Ken');
+      console.count('Ken');
+      console.count('Ken');
+      console.count('Tim');
+      console.count('Tim');
+      console.count('Tim');
+      console.count('Tim');
+      console.count('Tim');
+      console.count('Ken');
+      console.count('Ken');
+
+      // timing
+      console.log('%c 12. timing', 'background:#BADA55');
+      console.time('fetching data');
+      fetch('https://api.github.com/users/wesbos')
+        .then(data => data.json())
+        .then(data => {
+          console.timeEnd('fetching data');
+          console.log(data);
+        });
+
+      // Table
+      console.log('%c 13. Table', 'background:#BADA55');
+      console.table(dogs);
+    </script>
+  </body>
+</html>
