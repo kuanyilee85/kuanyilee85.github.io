@@ -34,6 +34,11 @@ p {
 .navbar {
   border-bottom: #008ed6 1px solid;
 }
+@media screen and (max-width: 550px) {
+  .navbar {
+    position: absolute;
+  }
+}
 .navbar-icon {
   height: 30px;
   width: 30px;
