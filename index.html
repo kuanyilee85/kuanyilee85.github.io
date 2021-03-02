@@ -1,446 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" href="assets/handwrite_brown_k2_icon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
-    <title>Kuanyi's Portfolio</title>
-  </head>
 
-  <body id="home" data-spy="scroll" data-target="#main-nav">
-    <!--NAVBAR SECTION-->
-    <nav
-      class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top py-1"
-      id="main-nav"
-    >
-      <div class="container">
-        <a href="#home" class="navbar-brand"
-          ><img
-            src="./assets/handwrite_white_k2.png"
-            class="headline-icon"
-            alt="Kuanyi's Portfolio"
-        /></a>
-        <button
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-            <!--NAVBAR ITEMS-->
-            <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#project" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#skill" class="nav-link">Skills</a>
-            </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="assets/handwrite_brown_k2_icon.ico" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <title>Kuanyi's Portfolio</title>
+</head>
 
-            <!--NAVBAR ICONS-->
-            <li class="nav-item">
-              <a
-                href="https://github.com/kuanyilee85"
-                id="profile-link"
-                target="_blank"
-                ><img
-                  src="./img/github-icon.png"
-                  alt="github_icon"
-                  class="navbar-icon"
-                />
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://www.linkedin.com/in/kuanyilee85/"
-                id="linkedin-link"
-                target="_blank"
-                ><img
-                  src="./img/linkedin-icon.png"
-                  alt="linkedin_icon"
-                  class="navbar-icon"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
+<body id="home" data-spy="scroll" data-target="#main-nav">
+  <!--NAVBAR SECTION-->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top py-1" id="main-nav">
+    <div class="container">
+      <a href="#home" class="navbar-brand"><img src="./assets/handwrite_white_k2.png" class="headline-icon"
+          alt="Kuanyi's Portfolio" /></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <!--NAVBAR ITEMS-->
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#project" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skill" class="nav-link">Skills</a>
+          </li>
+
+          <!--NAVBAR ICONS-->
+          <li class="nav-item">
+            <a href="https://github.com/kuanyilee85" id="profile-link" target="_blank"><img src="./img/github-icon.png"
+                alt="github_icon" class="navbar-icon" />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/kuanyilee85/" id="linkedin-link" target="_blank"><img
+                src="./img/linkedin-icon.png" alt="linkedin_icon" class="navbar-icon" />
+            </a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!--HOME SECTION-->
-    <section id="home-section">
-      <!--class dark-overlay is for the opacity effect-->
-      <div class="dark-overlay">
-        <!--Following is for the content-->
-        <div class="container">
-          <div class="row">
-            <div class="col text-center py-5">
-              <h1 class="display-4">KuanYi Lee</h1>
-              <h1 class="display-5">Software Developer · Web Developer</h1>
-            </div>
+  <!--HOME SECTION-->
+  <section id="home-section">
+    <!--class dark-overlay is for the opacity effect-->
+    <div class="dark-overlay">
+      <!--Following is for the content-->
+      <div class="container">
+        <div class="row">
+          <div class="col text-center py-5">
+            <h1 class="display-4">KuanYi Lee</h1>
+            <h1 class="display-5">Software Developer · Web Developer</h1>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!--ABOUT SECTION-->
-    <section id="about">
-      <div class="container">
-        <div class="row d-flex justify-content-center align-items-center">
-          <h1 class="display-4">About me -</h1>
-          <a
-            class="btn btn-outline-info"
-            href="./assets/Web_Developer_Resume_Kuanyi Lee.pdf"
-            target="_blank"
-            >Resume</a
-          >
+  <!--ABOUT SECTION-->
+  <section id="about">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <h1 class="display-4">About me -</h1>
+        <a class="btn btn-outline-info" href="./assets/Web_Developer_Resume_Kuanyi Lee.pdf" target="_blank">Resume</a>
+      </div>
+      <hr />
+      <div class="row-hl d-flex justify-content-around text-center">
+        <div class="p-3 item-hl">
+          <img class="icon-skills" src="./img/skills/programming.png" alt="programming-icon" />
+          <h3 class="sub-title">Web Development</h3>
+          <p>
+            Frontend: HTML | CSS | JavaScript | React | Angular
+          </p>
+          <p>Backend: Node | Express | MySQL | Git | Heroku</p>
         </div>
-        <hr />
-        <div class="row-hl d-flex justify-content-around text-center">
-          <div class="p-3 item-hl">
-            <img
-              class="icon-skills"
-              src="./img/skills/programming.png"
-              alt="programming-icon"
-            />
-            <h3 class="sub-title">Web Development</h3>
-            <p>
-              Frontend: HTML | CSS | JavaScript | React | Redux | Redux-Thunk
+        <div class="p-4 item-hl">
+          <img class="icon-skills" src="./img/skills/battery.png" alt="battery-icon" />
+          <h3 class="sub-title">Battery / Materials Engineering</h3>
+          <p>Lithium ion batteries | Battery Test Programming</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------For Project Navbar link-------->
+  <section id="project">
+    <div></div>
+  </section>
+
+  <!--PROJECTS HEADER SECTION-->
+  <header id="projects-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center">
+          <h1 class="section-title">WEB DEV PROJECTS</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--PROJECTS SECTION-->
+  <section id="projects" class="py-3">
+    <div class="container">
+      <div class="card-columns">
+
+        <div class="card">
+          <img class="card-img-top img-fluid " src="./img/projects/react_sandbox.jpg" alt="" />
+          <div class="card-body">
+            <h4 class="card-title text-center">React Sandox</h4>
+            <p class="card-text text-sm-left">
+              The place for React component practice, such as accordion, slider, tabs, menu, todolist, pagination.
+              Enjoy!
             </p>
-            <p>Backend: Node | Express | MySQL | Git | Heroku</p>
+            <a class="btn btn-outline-success btn-block" href="https://ocean-paradise-resort.herokuapp.com/"
+              target="_blank">Link</a>
           </div>
-          <div class="p-4 item-hl">
-            <img
-              class="icon-skills"
-              src="./img/skills/battery.png"
-              alt="battery-icon"
-            />
-            <h3 class="sub-title">Battery / Materials Engineering</h3>
-            <p>Lithium ion batteries | Battery Test Programming</p>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top img-fluid " src="./img/projects/Ocean_Paradise_Resort.jpg" alt="" />
+          <div class="card-body">
+            <h4 class="card-title text-center">Ocean Paradise Resort</h4>
+            <p class="card-text text-sm-left">
+              This is a full stack application combines React, Redux, firebase
+              and Stripe payment. The application has been deployed on Heroku.
+              Please visit it by the button.
+            </p>
+            <a class="btn btn-outline-success btn-block" href="https://ocean-paradise-resort.herokuapp.com/"
+              target="_blank">Link</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class=" card-img-top img-fluid" src="./img/projects/The_Weather_App.jpg" alt="" />
+          <div class="card-body">
+            <h4 class="card-title text-center">Weather Forecast</h4>
+            <p class="card-text text-sm-left">
+              This is a React-Redux Application integrated with OpenWeatherMap
+              and Google Map API. You can search temperature, pressure and
+              humidity in the feature week for your favorite cities.
+            </p>
+            <a class="btn btn-outline-success btn-block" href="https://react-redux-weather-api.herokuapp.com/"
+              target="_blank">Link</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top img-fluid" src="./img/projects/react-image-search-app.png" alt="" />
+          <div class="card-body">
+            <h4 class="card-title text-center">Image Search App</h4>
+            <p class="card-text text-sm-left">
+              This is a React-Redux Application integrated with Unsplash API.
+              You will get the image you want by enter the keyword. Let's try
+              it!
+            </p>
+            <a class="btn btn-outline-success btn-block" href="https://react-image-search-app.herokuapp.com/"
+              target="_blank">Link</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top img-fluid" src="./img/projects/JS_sandbox.png" alt="" />
+          <div class="card-body">
+            <h4 class="card-title text-center">JavaScript SandBox</h4>
+            <p class="card-text text-sm-left">
+              The place for fundamental JavaScript and CSS practice, including
+              DOM, Array manipulation, EventListener development, ES6,
+              Destructing, OOP. Let's see some fun projects.
+            </p>
+            <a class="btn btn-outline-success btn-block" href="/pages/javascript_sandbox.html">Link</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top img-fluid" src="./img/projects/The_Budget_App.jpg" alt="" />
+          <div class="card-body">
+            <h4 class="card-title text-center">The Budget App</h4>
+            <p class="card-text text-sm-left">
+              This is a budget calculation application built by purely
+              javascript, which is the pract for JavaScript ES6, OOP, AJAX.
+              Please visit it by the link.
+            </p>
+            <a class="btn btn-outline-success btn-block" href="https://javascript-budget.herokuapp.com/"
+              target="_blank">Link</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-------For Project Navbar link-------->
-    <section id="project">
-      <div></div>
-    </section>
+  <!-------For Skill Navbar link-------->
+  <section id="skill">
+    <div></div>
+  </section>
 
-    <!--PROJECTS HEADER SECTION-->
-    <header id="projects-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 m-auto text-center">
-            <h1 class="section-title">WEB DEV PROJECTS</h1>
-          </div>
+  <!--SKILLS HEAD SECTION-->
+  <header id="skills-header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 m-auto text-center">
+          <h1 class="section-title">SKILLS</h1>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!--PROJECTS SECTION-->
-    <section id="projects" class="py-3">
-      <div class="container">
-        <div class="card-columns">
-          <div class="card">
-            <img
-              class="card-img-top img-fluid "
-              src="./img/projects/Ocean_Paradise_Resort.jpg"
-              alt=""
-            />
-            <div class="card-body">
-              <h4 class="card-title text-center">Ocean Paradise Resort</h4>
-              <p class="card-text text-sm-left">
-                This is a full stack application combines React, Redux, firebase
-                and Stripe payment. The application has been deployed on Heroku.
-                Please visit it by the button.
-              </p>
-              <a
-                class="btn btn-outline-success btn-block"
-                href="https://ocean-paradise-resort.herokuapp.com/"
-                target="_blank"
-                >Link</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              class=" card-img-top img-fluid"
-              src="./img/projects/The_Weather_App.jpg"
-              alt=""
-            />
-            <div class="card-body">
-              <h4 class="card-title text-center">Weather Forecast</h4>
-              <p class="card-text text-sm-left">
-                This is a React-Redux Application integrated with OpenWeatherMap
-                and Google Map API. You can search temperature, pressure and
-                humidity in the feature week for your favorite cities.
-              </p>
-              <a
-                class="btn btn-outline-success btn-block"
-                href="https://react-redux-weather-api.herokuapp.com/"
-                target="_blank"
-                >Link</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              class="card-img-top img-fluid"
-              src="./img/projects/react-image-search-app.png"
-              alt=""
-            />
-            <div class="card-body">
-              <h4 class="card-title text-center">Image Search App</h4>
-              <p class="card-text text-sm-left">
-                This is a React-Redux Application integrated with Unsplash API.
-                You will get the image you want by enter the keyword. Let's try
-                it!
-              </p>
-              <a
-                class="btn btn-outline-success btn-block"
-                href="https://react-image-search-app.herokuapp.com/"
-                target="_blank"
-                >Link</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              class="card-img-top img-fluid"
-              src="./img/projects/JS_sandbox.png"
-              alt=""
-            />
-            <div class="card-body">
-              <h4 class="card-title text-center">JavaScript SandBox</h4>
-              <p class="card-text text-sm-left">
-                The place for fundamental JavaScript and CSS practice, including
-                DOM, Array manipulation, EventListener development, ES6,
-                Destructing, OOP. Let's see some fun projects.
-              </p>
-              <a
-                class="btn btn-outline-success btn-block"
-                href="/pages/javascript_sandbox.html"
-                >Link</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              class="card-img-top img-fluid"
-              src="./img/projects/The_Budget_App.jpg"
-              alt=""
-            />
-            <div class="card-body">
-              <h4 class="card-title text-center">The Budget App</h4>
-              <p class="card-text text-sm-left">
-                This is a budget calculation application built by purely
-                javascript, which is the pract for JavaScript ES6, OOP, AJAX.
-                Please visit it by the link.
-              </p>
-              <a
-                class="btn btn-outline-success btn-block"
-                href="https://javascript-budget.herokuapp.com/"
-                target="_blank"
-                >Link</a
-              >
-            </div>
-          </div>
+  <!--SKILLS SECTION-->
+  <section id="skills" class="py-4">
+    <div class="container">
+      <div class="flex-container row-hl d-flex justify-content-around">
+        <div class="p-4 item-hl">
+          <img class="img-fluid card-img-top" src="img/skills/html5.png" alt="Html5" />
+        </div>
+        <div class="p-4 item-hl">
+          <img class="img-fluid card-img-top" src="img/skills/css3.png" alt="CSS3" />
+        </div>
+        <div class="p-4 item-hl">
+          <img class="img-fluid card-img-top" src="img/skills/javascript.png" alt="Javascript" />
+        </div>
+        <div class="p-4 item-hl">
+          <img class="img-fluid card-img-top" src="img/skills/git.png" alt="Git" />
+        </div>
+        <div class="p-4 item-hl">
+          <img class="img-fluid card-img-top" src="img/skills/react.png" alt="React.js" />
+        </div>
+        <div class="p-4 item-hl">
+          <img class="img-fluid card-img-top" src="img/skills/redux.png" alt="Redux" />
+        </div>
+        <div class="p-4 item-hl">
+          <img class="img-fluid card-img-top" src="img/skills/node.png" alt="Node.js" />
+        </div>
+        <div class="p-4 item-hl">
+          <img class="img-fluid card-img-top" src="img/skills/express.png" alt="Express" />
+        </div>
+        <div class="p-4 item-hl">
+          <img class="img-fluid card-img-top" src="img/skills/mysql.png" alt="MySQL" />
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-------For Skill Navbar link-------->
-    <section id="skill">
-      <div></div>
-    </section>
-
-    <!--SKILLS HEAD SECTION-->
-    <header id="skills-header">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 m-auto text-center">
-            <h1 class="section-title">SKILLS</h1>
-          </div>
+  <!--FOOTER SECTION-->
+  <footer id="footer" class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center py-4">
+          <a href="https://github.com/kuanyilee85" id="profile-link" target="_blank"><img class="contact-icon"
+              src="./img/github-icon.png" alt="github_icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/kuanyilee85/" id="linkedin-link" target="_blank"><img
+              class="contact-icon" src="./img/linkedin-icon.png" alt="linkedin_icon" />
+          </a>
+          <a href="mailto:kuanyilee85@gmail.com?subject=We are looking for a software developer like you!"
+            id="envelope-link" target="_blank">
+            <img class="contact-icon" src="./img/skills/envelope.png" alt="envelope_icon" />
+          </a>
+          <p>Thank you for visiting! Last update: March 2021</p>
         </div>
       </div>
-    </header>
+    </div>
+  </footer>
 
-    <!--SKILLS SECTION-->
-    <section id="skills" class="py-4">
-      <div class="container">
-        <div class="flex-container row-hl d-flex justify-content-around">
-          <div class="p-4 item-hl">
-            <img
-              class="img-fluid card-img-top"
-              src="img/skills/html5.png"
-              alt="Html5"
-            />
-          </div>
-          <div class="p-4 item-hl">
-            <img
-              class="img-fluid card-img-top"
-              src="img/skills/css3.png"
-              alt="CSS3"
-            />
-          </div>
-          <div class="p-4 item-hl">
-            <img
-              class="img-fluid card-img-top"
-              src="img/skills/javascript.png"
-              alt="Javascript"
-            />
-          </div>
-          <div class="p-4 item-hl">
-            <img
-              class="img-fluid card-img-top"
-              src="img/skills/git.png"
-              alt="Git"
-            />
-          </div>
-          <div class="p-4 item-hl">
-            <img
-              class="img-fluid card-img-top"
-              src="img/skills/react.png"
-              alt="React.js"
-            />
-          </div>
-          <div class="p-4 item-hl">
-            <img
-              class="img-fluid card-img-top"
-              src="img/skills/redux.png"
-              alt="Redux"
-            />
-          </div>
-          <div class="p-4 item-hl">
-            <img
-              class="img-fluid card-img-top"
-              src="img/skills/node.png"
-              alt="Node.js"
-            />
-          </div>
-          <div class="p-4 item-hl">
-            <img
-              class="img-fluid card-img-top"
-              src="img/skills/express.png"
-              alt="Express"
-            />
-          </div>
-          <div class="p-4 item-hl">
-            <img
-              class="img-fluid card-img-top"
-              src="img/skills/mysql.png"
-              alt="MySQL"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
 
-    <!--FOOTER SECTION-->
-    <footer id="footer" class="bg-dark">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center py-4">
-            <a
-              href="https://github.com/kuanyilee85"
-              id="profile-link"
-              target="_blank"
-              ><img
-                class="contact-icon"
-                src="./img/github-icon.png"
-                alt="github_icon"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/kuanyilee85/"
-              id="linkedin-link"
-              target="_blank"
-              ><img
-                class="contact-icon"
-                src="./img/linkedin-icon.png"
-                alt="linkedin_icon"
-              />
-            </a>
-            <a
-              href="mailto:kuanyilee85@gmail.com?subject=We are looking for a software developer like you!"
-              id="envelope-link"
-              target="_blank"
-            >
-              <img
-                class="contact-icon"
-                src="./img/skills/envelope.png"
-                alt="envelope_icon"
-              />
-            </a>
-            <p>Thank you for visiting! Last update: December 2019</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+  <script>
+    // Init Scrollspy
+    $('body').scrollspy({ target: '#main-nav' });
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous"
-    ></script>
+    // Smooth Scrolling
+    $('#main-nav a').on('click', function (event) {
+      if (this.hash !== '') {
+        event.preventDefault();
 
-    <script>
-      // Init Scrollspy
-      $('body').scrollspy({ target: '#main-nav' });
+        const hash = this.hash;
 
-      // Smooth Scrolling
-      $('#main-nav a').on('click', function(event) {
-        if (this.hash !== '') {
-          event.preventDefault();
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top
+          },
+          800,
+          function () {
+            window.location.hash = hash;
+          }
+        );
+      }
+    });
+  </script>
+</body>
 
-          const hash = this.hash;
-
-          $('html, body').animate(
-            {
-              scrollTop: $(hash).offset().top
-            },
-            800,
-            function() {
-              window.location.hash = hash;
-            }
-          );
-        }
-      });
-    </script>
-  </body>
 </html>
