@@ -12,9 +12,9 @@ p {
   background: url(../img/bg-about.jpg);
   justify-content: center;
   align-items: center;
-  background-position: center right;
-  background-repeat: no-repeat;
-  background-size: auto;
+  background-position: 100% 100%;
+  background-size: 110% 110%;
+  background-attachment: scroll;
   min-height: 50vh;
   width: 100vw;
 }
